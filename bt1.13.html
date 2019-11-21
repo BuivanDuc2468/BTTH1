@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tạo form và các điều khiển</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		h2{
+			color: blue;
+		}
+		table{
+			background-color: #ffffcc;
+			color: #0000bb;
+			width:550px;
+		}
+		i{
+			color: #FFCC00;
+		}
+		div{
+			color: #FFCC00;
+		}
+		textarea{
+			width: 300px;
+		}
+		fieldset{
+			width: 350px;
+			height: 55px;
+			margin-left: 60px;
+		}
+		.sldk input{
+			width: 90px;
+		}
+		
+	</style>
+</head>
+<body>
+	<h2 align="center"><b>Đăng ký du lịch</b></h2>
+	<form>
+		<table border="1" cellspacing="0px" align="center"  bgcolor="">
+			<tr>
+				<td>Họ và tên</td>
+				<td><input type="text" name="" value="" placeholder="" style="width: 340px;"></td>
+			</tr>
+			<tr>
+				<td>Địa chỉ</td>
+				<td><input type="text" name="" value="" placeholder="" style="width: 250px;"></td>
+			</tr>
+			<tr>
+				<td>Điện thoại</td>
+				<td><input type="text" name="" value="" placeholder=""></td>
+			</tr>
+			<tr>
+				<td>Khách Việt Nam</td>
+				<td><input type="checkbox" name="" value=""> </td>
+			</tr>
+			<tr>
+				<td>Chọn tour</td>
+				<td>
+					<select>
+						<optgroup label="Miền Bắc">	
+				     	    <option>Hà Nội - Hạ Long - Sapa</option>
+				    		<option>Hà Nội - Chùa Hương - Ninh Bình</option>
+					    	<option>Hà Nội - Cát Bà - Tuần Châu</option>
+						    </optgroup>
+						<optgroup label="Miền Trung">
+					    	<option>Huế - Bạch Mã - Đà Nẵng</option>
+					    	<option>Nha Trang - Đà Lạt</option>
+				    		<option>Buôn Ma Thuật - Gia Lai - Kontum</option>
+				    	</optgroup>
+				 		<optgroup label="Miền Nam">
+			     			<option>TP.HCM - Cần Thơ - Cà Mau</option>
+				    		<option>TP.HCM - Mỹ Tho</option>
+				    	</optgroup>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Phương tiện</td>
+				<td><input type="radio" checked=""> Máy bay
+					<input type="radio"> Xe ô tô</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="sldk">
+					<fieldset> <legend><i>Số lượng đoàn khách</i></legend>
+						Người lớn <input type="text"> Trẻ em <input type="text">
+					</fieldset>
+				
+			</tr>
+			<tr>
+				<td>Ghi chú thêm</td>
+				<td><textarea id="ta"></textarea></td>
+			</tr>		
+			<tr>
+				<td colspan="2" align="center"><input type="button" value="Đồng ý" onClick="var x='Bạn đã đăng ký thành công!!!';
+					result.innerHTML=x;"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"> <div id="result">
+				</div></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
